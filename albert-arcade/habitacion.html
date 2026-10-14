@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Albert's Room · Albert Galindo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Baloo+2:wght@500;600;700;800&family=Inter+Tight:wght@400;500;800&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<noscript><style>.boot{display:none!important}</style></noscript>
+
+</head>
+<body>
+<div class="room" id="room" role="main" aria-label="Albert's room">
+  <div class="room-stage">
+    <div class="room-view" id="roomView">
+      <canvas id="roomCv" width="320" height="180" aria-hidden="true"></canvas>
+      <button class="hot" data-dev="pc" type="button" style="left:21.3%;top:33.3%;width:20.6%;height:27.8%" aria-label="Ordenador: jugar a Space Invaders"><span class="hot-tag">PC · SPACE INVADERS</span></button>
+      <button class="hot" data-dev="tv" type="button" style="left:65.6%;top:37.8%;width:28.1%;height:43.3%" aria-label="Consola: jugar al plataformas"><span class="hot-tag">CONSOLA · PLATAFORMAS</span></button>
+      <button class="hot" data-dev="gb" type="button" style="left:48.4%;top:76.1%;width:9.4%;height:17.8%" aria-label="Game Boy: jugar a Albert Run"><span class="hot-tag">GAME BOY · ALBERT RUN</span></button>
+      <button class="hot" data-dev="door" type="button" style="left:0.9%;top:13.9%;width:15.6%;height:54.4%" aria-label="Puerta: salir de la habitación"><span class="hot-tag">SALIR ▸</span></button>
+      <div class="room-sign" aria-hidden="true"><span>ALBERT'S</span><span>ROOM</span></div>
+    </div>
+    <p class="room-swipe" aria-hidden="true">◀ DESLIZA PARA VER EL CUARTO ▶</p>
+    <div hidden>
+    </div>
+  </div>
+
+  <div class="play" id="play" hidden>
+    <div class="play-top"><span id="playName">GAME</span><button class="cs-x" id="playBack" type="button">◀ HABITACIÓN</button></div>
+    <div class="dev" id="dev"></div>
+    <p class="dev-keys" id="devKeys"></p>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<script src="js/room.js"></script>
+</body>
+</html>

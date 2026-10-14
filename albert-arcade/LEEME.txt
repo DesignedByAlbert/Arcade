@@ -1,11 +1,29 @@
-Albert Arcade · albert.fig
+ALBERT ARCADE · PORTFOLIO
 =========================
 
-Para verla: abre index.html en el navegador.
-Para publicarla: sube esta carpeta tal cual a tu repositorio de GitHub Pages (index.html en la raíz, junto a la carpeta assets).
+1. DESCOMPRIME el zip primero (no abras el index.html desde dentro del zip, no encontraría las imágenes).
+2. Abre index.html con Chrome, Safari o Firefox.
 
-Notas
-- Las tipografías se cargan de Google Fonts, así que hace falta conexión a internet.
-- El formulario de contacto envía con Web3Forms (la misma clave que DesignedByAlbert). Abierto como archivo local puede no enviar; publicado en GitHub Pages sí.
-- El botón "Descargar CV" abre el PDF de DesignedByAlbert en GitHub.
-- Los vídeos del arcade están preparados: pon cada vídeo en assets/ y escribe su ruta en VIDEOS dentro de index.html (busca: const VIDEOS=).
+Estructura
+----------
+index.html        La web principal (hero, arcade, logros, mi vida, contacto, footer)
+habitacion.html   La habitación secreta (se abre con INSERT COIN; la puerta vuelve a la web)
+css/styles.css    Todos los estilos
+js/               Cada parte en su archivo:
+  00-failsafe.js        Si algo falla, nunca deja la pantalla tapada por la carga
+  01-boot.js            Animación de carga pixel
+  02-app.js             Proyectos, making of, logros, mural, contacto, CV, mapa
+  03-stars.js           Estrellas del hero
+  04-skyline-windows.js Luces de los edificios
+  05-hero-night.js      Detalles de la noche (luna, cometa...)
+  06-letter-hop.js      Letras del nombre que saltan
+  07-pet-config.js / 08-pet.js  Mascota
+  09-coins.js           Lluvia de monedas
+  10-constellations.js  Constelaciones del hero
+  11-tools-order.js     Reordenar las herramientas
+  insert-coin.js        Botón INSERT COIN
+  room.js               Habitación y los 3 juegos
+assets/           Imágenes
+
+Para subirlo a GitHub Pages: sube TODO el contenido de esta carpeta (no solo el index.html).
+Las tipografías se cargan de Google Fonts, así que hace falta internet.
