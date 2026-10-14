@@ -1,0 +1,11 @@
+Albert Arcade · albert.fig
+=========================
+
+Para verla: abre index.html en el navegador.
+Para publicarla: sube esta carpeta tal cual a tu repositorio de GitHub Pages (index.html en la raíz, junto a la carpeta assets).
+
+Notas
+- Las tipografías se cargan de Google Fonts, así que hace falta conexión a internet.
+- El formulario de contacto envía con Web3Forms (la misma clave que DesignedByAlbert). Abierto como archivo local puede no enviar; publicado en GitHub Pages sí.
+- El botón "Descargar CV" abre el PDF de DesignedByAlbert en GitHub.
+- Los vídeos del arcade están preparados: pon cada vídeo en assets/ y escribe su ruta en VIDEOS dentro de index.html (busca: const VIDEOS=).
